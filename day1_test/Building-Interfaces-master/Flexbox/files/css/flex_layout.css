@@ -1,0 +1,51 @@
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+
+header {
+    flex: 0 0 150px;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+footer {
+    flex: 0 0 100px;
+}
+
+nav {
+    flex: 0 0 200px;
+}
+
+article {
+    flex: 1 1 auto;
+}
+
+aside {
+    flex: 0 0 200px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    nav {
+        flex: 0 0 50px;
+    }
+
+    aside {
+        flex: 0 0 50px;
+    }
+
+}

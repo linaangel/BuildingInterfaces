@@ -1,0 +1,8 @@
+ul.myStyle {
+  color: green; }
+  ul.myStyle li {
+    background-color: red; }
+    ul.myStyle li a {
+      color: "purple"; }
+
+/*# sourceMappingURL=main.css.map */

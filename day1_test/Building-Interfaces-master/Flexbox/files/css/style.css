@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    font-size: 25px;
+}
+
+.flex {
+    height: 100%;
+}
+
+header {
+    background-color: red;
+}
+article {
+    background-color: #add8e6;
+}
+aside {
+    background-color: orange;
+}
+footer {
+    background-color: green;
+}
+

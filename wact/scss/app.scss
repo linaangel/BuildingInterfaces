@@ -1,0 +1,245 @@
+@import "settings";
+@import "foundation";
+
+body{
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+.columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+}
+
+.logo{
+    min-width: 60px;
+    max-height: 95px;
+    vertical-align: middle;
+    border: 0px;
+    padding: 5px;
+}
+
+.padlogo{
+    padding: 0px;  
+    max-width: 82px;
+}
+
+.busqueda {
+   padding: 20px;
+}
+
+.loc{
+    max-width: 200px;
+}
+
+p {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 15px;
+    max-height: 26px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 15px;
+    max-height: 26px;
+}
+
+.top {
+    margin: 20px;
+}
+
+.search {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.entry {
+    margin-top: 10px;
+    align-self: flex-end;
+    padding: 0px;
+    width: 230px;
+}
+
+button.tiny, .button.tiny {
+  padding: 0.5rem;
+    width: 88px;
+}
+
+button, .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: #FFFFFF;
+    transition: background-color 300ms ease-out;
+    margin-top: 10px;
+}
+
+button.alert, .button.alert {
+    background-color: dodgerblue;
+    height: 2.3125rem;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    font-size: 14px;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    margin-top: 10px;
+}
+
+button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+    background-color: yellow;
+}
+
+button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+    color: black;
+}
+
+.weather {
+    padding-left: 30px;    
+    padding-right: 30px;    
+}
+
+.location, .temperature, .date, .otherinfo {
+    color: white;
+    text-align: left;
+}
+
+.location {
+    color: white;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+.temperature {
+    color: white;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+.date {
+    color: white;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.otherinfo {
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#weatherbg {
+    padding: 15px;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    background-color: darkorange;
+}
+
+.weathericon {
+    max-height: 450px;
+    padding: inherit;
+}
+
+.nextdays {
+    padding: 20px;
+}
+
+#nextdaysinfo {
+    padding: 10px;
+    border: 3px;
+    border-color: black;
+    border-style: solid; 
+}
+
+.days, .tempmax, .tempmin {
+    padding: 0px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.days {
+    font-weight: 800;
+}
+
+.tempmax {
+    color: darkorange;    
+}
+
+.tempmin {
+    color: dodgerblue;
+}
+
+.social {
+    max-height: 25px;
+}
+
+footer {
+    font-size: 0.9em;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    height: auto;
+}
+
+.by {
+    text-align: center;
+    padding: 3px;
+    font-size: 0.6em;
+}
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";

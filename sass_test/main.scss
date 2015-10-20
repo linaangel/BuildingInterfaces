@@ -1,0 +1,14 @@
+$primary-color: "purple";
+
+ul.myStyle {
+color: green;
+
+    li {
+    background-color: red;
+    
+    a{
+        color: $primary-color;
+        }
+    }
+}
+  

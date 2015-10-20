@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <style>
+
+        .button-left {
+            position: fixed;
+            top: 500px;
+            left: 150px;
+        }
+
+        .button-right {
+            position: fixed;
+            top: 500px;
+            left: 240px;
+        }
+
+        .story-back {
+            width: 452px;
+            height: 684px;
+            background: #36B1BF;
+            background-size: 452px 684px;
+            position: relative;
+        }
+        
+
+        .ball {
+            position: relative;
+            opacity: 0;
+        }
+
+
+        .stick {
+            position: relative;
+            opacity: 0;
+        }
+
+        .triangle{
+            position: relative;
+            opacity: 0;
+        }
+
+
+
+        </style>
+        <script src="js/vendor/velocity.js"></script>
+
+    </head>
+    <body> 
+        <div class="story-back">
+
+
+                <img class="ball" src="img/circle.svg" x="10%" y="10%" alt="Circle"/>
+                <img class="stick" src="img/square.svg" x="10%" y="10%" alt="Square yay"/>
+                <img class="triangle" src="img/triangle.svg" x="10%" y="10%" alt="Triangle yay"/>
+ 
+
+           <div class="button-left">
+                <button id="prev">Previous</button> 
+            </div>
+
+            <div class="button-right">
+                <button id="next">Next</button>
+            </div> 
+
+
+         </div>
+
+
+        <script>
+            
+            //counter
+            var step = 0;
+            
+            
+            //make stop and 0 and not go over the # of steps in your animation
+            function move(dir){
+            var dir;
+            if (dir == "next") {
+                step++;
+                console.log(step);
+            } else {
+                step--;
+                console.log(step);
+            }
+            if (step == "1"){
+                $(".ball").velocity({opacity: 0.9, top: 100, left: 100 }, [ 250, 15 ]);
+            }
+
+            if (step == "2") {
+               $(".stick").velocity({opacity: 0.9, top: 140, left: 150 }, [ 250, 15 ]); 
+            }
+
+            if (step == "3") {
+               $(".triangle").velocity({opacity: 0.8, top: 250, left: 10 }, [ 250, 15 ]);
+            }
+
+            if (step == "4"){
+                $(".ball").velocity("stop").velocity({ rotateZ: 360, scaleX: 0.0 });
+            }
+
+            if (step == "5"){
+                $(".stick").velocity("stop").velocity({ rotateZ: 180, scaleX: 0.0 });
+            }
+
+            if (step == "6"){
+                $(".triangle").velocity("stop").velocity({ rotateZ: -360, scaleX: 0.0 });
+            }
+
+
+            }
+
+            
+            //next and previous buttons
+            $("#next").click( function(){
+                move("next")
+            });
+            $("#prev").click(function(){
+                move("prev");
+            });
+            
+        </script>
+
+
+    </body>
+</html>

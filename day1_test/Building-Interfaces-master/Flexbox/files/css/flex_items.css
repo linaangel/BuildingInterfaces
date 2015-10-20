@@ -1,0 +1,24 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    flex-grow: 2;
+    flex-shrink: 3;
+
+    /* initial width */
+    flex-basis: 0px;
+
+}
+
+aside {
+    /*flex-basis: 300px;*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex: 1 1 0px;
+}
+
+    article {
+        order: 2;
+    }

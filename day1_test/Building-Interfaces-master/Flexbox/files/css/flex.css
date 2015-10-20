@@ -1,0 +1,25 @@
+.flex > * {
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+/*    justify-content: flex-end;*/
+/*    justify-content: center;*/
+/*    align-items: flex-end;*/
+/*    align-items: center;*/
+/*    align-items: baseline;*/
+    /*    align-items: stretch;*/
+/*    justify-content: space-between;*/
+/*    justify-content: space-around;*/
+
+/*    flex-direction: column;*/
+/*    flex-direction: column-reverse;*/
+    
+/*    flex-wrap: wrap;*/
+    
+/*    align-content: flex-end;*/
+    
+}
