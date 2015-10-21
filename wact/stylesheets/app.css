@@ -9573,40 +9573,32 @@ button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus
 }
 
 /* line 119, ../scss/app.scss */
-.location, .temperature, .date, .otherinfo {
+#location, #temperature, #date, #precipitation, #humidity, #wind, #maxmin {
   color: white;
   text-align: left;
 }
 
 /* line 124, ../scss/app.scss */
-.location {
-  color: white;
+#location {
   font-size: 1.6em;
-  text-align: left;
 }
 
-/* line 130, ../scss/app.scss */
-.temperature {
-  color: white;
+/* line 128, ../scss/app.scss */
+#temperature {
   font-size: 1.8em;
-  text-align: left;
+}
+
+/* line 132, ../scss/app.scss */
+#date {
+  font-size: 1.2em;
 }
 
 /* line 136, ../scss/app.scss */
-.date {
-  color: white;
-  font-size: 1.2em;
-  text-align: left;
+#precipitation, #humidity, #wind, #maxmin {
+  font-size: 1.3em;
 }
 
-/* line 142, ../scss/app.scss */
-.otherinfo {
-  color: white;
-  font-size: 1.5em;
-  text-align: left;
-}
-
-/* line 148, ../scss/app.scss */
+/* line 140, ../scss/app.scss */
 #weatherbg {
   padding: 15px;
   border: 3px;
@@ -9615,18 +9607,18 @@ button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus
   background-color: darkorange;
 }
 
-/* line 156, ../scss/app.scss */
+/* line 148, ../scss/app.scss */
 .weathericon {
   max-height: 450px;
   padding: inherit;
 }
 
-/* line 161, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 .nextdays {
   padding: 20px;
 }
 
-/* line 165, ../scss/app.scss */
+/* line 157, ../scss/app.scss */
 #nextdaysinfo {
   padding: 10px;
   border: 3px;
@@ -9634,34 +9626,34 @@ button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus
   border-style: solid;
 }
 
-/* line 172, ../scss/app.scss */
+/* line 164, ../scss/app.scss */
 .days, .tempmax, .tempmin {
   padding: 0px;
-  font-size: 0.8em;
+  font-size: 0.5em;
   text-align: center;
 }
 
-/* line 178, ../scss/app.scss */
+/* line 170, ../scss/app.scss */
 .days {
   font-weight: 800;
 }
 
-/* line 182, ../scss/app.scss */
+/* line 174, ../scss/app.scss */
 .tempmax {
   color: darkorange;
 }
 
-/* line 186, ../scss/app.scss */
+/* line 178, ../scss/app.scss */
 .tempmin {
   color: dodgerblue;
 }
 
-/* line 190, ../scss/app.scss */
+/* line 182, ../scss/app.scss */
 .social {
   max-height: 25px;
 }
 
-/* line 194, ../scss/app.scss */
+/* line 186, ../scss/app.scss */
 footer {
   font-size: 0.9em;
   background-color: black;
@@ -9671,7 +9663,7 @@ footer {
   height: auto;
 }
 
-/* line 203, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 .by {
   text-align: center;
   padding: 3px;
