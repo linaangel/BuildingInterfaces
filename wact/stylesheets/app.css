@@ -9439,12 +9439,14 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-/* line 4, ../scss/app.scss */
+/* line 3, ../scss/app.scss */
+html,
 body {
   font-family: 'Open Sans', 'Helvetica', sans-serif;
+  width: 100%;
 }
 
-/* line 8, ../scss/app.scss */
+/* line 9, ../scss/app.scss */
 .columns {
   position: relative;
   padding-left: 0.9375rem;
@@ -9452,84 +9454,120 @@ body {
   float: left;
 }
 
-/* line 15, ../scss/app.scss */
+/* line 16, ../scss/app.scss */
+.top {
+  padding-bottom: 1em;
+  margin-top: 1em;
+}
+
+/* line 21, ../scss/app.scss */
 .logo {
-  min-width: 60px;
   max-height: 95px;
-  vertical-align: middle;
-  border: 0px;
-  padding: 5px;
+  padding: 0.3em;
 }
 
-/* line 23, ../scss/app.scss */
-.padlogo {
-  padding: 0px;
-  max-width: 82px;
-}
-
-/* line 28, ../scss/app.scss */
-.busqueda {
-  padding: 20px;
-}
-
-/* line 32, ../scss/app.scss */
+/* line 26, ../scss/app.scss */
 .loc {
   max-width: 200px;
 }
 
-/* line 36, ../scss/app.scss */
+/* line 30, ../scss/app.scss */
 p {
   vertical-align: middle;
 }
 
-/* line 40, ../scss/app.scss */
+/* line 34, ../scss/app.scss */
 h1 {
   font-size: 2em;
   font-weight: 800;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding: 15px;
-  max-height: 26px;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+@media only screen and (max-width: 50em) {
+  /* line 34, ../scss/app.scss */
+  h1 {
+    font-size: 1.7em;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 34, ../scss/app.scss */
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 25em) {
+  /* line 34, ../scss/app.scss */
+  h1 {
+    font-size: 1.1em;
+  }
 }
 
-/* line 50, ../scss/app.scss */
+/* line 54, ../scss/app.scss */
 h2 {
+  margin-top: 0em;
+  margin-bottom: 0.2em;
   font-size: 1.8em;
   font-weight: 800;
   text-align: left;
-  margin-bottom: 5px;
-  padding: 15px;
-  max-height: 26px;
+}
+@media only screen and (max-width: 50em) {
+  /* line 54, ../scss/app.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 54, ../scss/app.scss */
+  h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 25em) {
+  /* line 54, ../scss/app.scss */
+  h2 {
+    font-size: 1em;
+  }
 }
 
-/* line 59, ../scss/app.scss */
-.top {
-  margin: 20px;
+/* line 74, ../scss/app.scss */
+.header-parent {
+  position: relative;
+  height: 100px;
+}
+@media only screen and (max-width: 40em) {
+  /* line 74, ../scss/app.scss */
+  .header-parent {
+    height: 70px;
+  }
 }
 
-/* line 63, ../scss/app.scss */
-.search {
-  margin-left: 25px;
-  margin-right: 25px;
+/* line 83, ../scss/app.scss */
+.header-child {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* line 68, ../scss/app.scss */
+/* line 90, ../scss/app.scss */
 .entry {
-  margin-top: 10px;
-  align-self: flex-end;
-  padding: 0px;
-  width: 230px;
+  position: relative;
+  width: 100%;
 }
 
-/* line 75, ../scss/app.scss */
-button.tiny, .button.tiny {
+/* line 95, ../scss/app.scss */
+button.tiny,
+.button.tiny {
   padding: 0.5rem;
-  width: 88px;
+  width: 100%;
 }
 
-/* line 80, ../scss/app.scss */
-button, .button {
+/* line 101, ../scss/app.scss */
+button,
+.button {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
@@ -9541,11 +9579,11 @@ button, .button {
   background-color: #008CBA;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
-  margin-top: 10px;
 }
 
-/* line 95, ../scss/app.scss */
-button.alert, .button.alert {
+/* line 116, ../scss/app.scss */
+button.alert,
+.button.alert {
   background-color: dodgerblue;
   height: 2.3125rem;
   border: 2px;
@@ -9553,118 +9591,176 @@ button.alert, .button.alert {
   border-style: solid;
   font-size: 14px;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
-  margin-top: 10px;
 }
 
-/* line 106, ../scss/app.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+/* line 127, ../scss/app.scss */
+button.alert:hover,
+button.alert:focus,
+.button.alert:hover,
+.button.alert:focus {
   background-color: yellow;
 }
 
-/* line 110, ../scss/app.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+/* line 134, ../scss/app.scss */
+button.alert:hover,
+button.alert:focus,
+.button.alert:hover,
+.button.alert:focus {
   color: black;
 }
 
-/* line 114, ../scss/app.scss */
-.weather {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-/* line 119, ../scss/app.scss */
-#location, #temperature, #date, #precipitation, #humidity, #wind, #maxmin {
+/* line 141, ../scss/app.scss */
+#location,
+#temperature,
+#date,
+#precipitation,
+#humidity,
+#wind,
+#maxmin {
   color: white;
   text-align: left;
 }
 
-/* line 124, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 #location {
   font-size: 1.6em;
 }
 
-/* line 128, ../scss/app.scss */
+/* line 156, ../scss/app.scss */
 #temperature {
   font-size: 1.8em;
 }
 
-/* line 132, ../scss/app.scss */
+/* line 160, ../scss/app.scss */
 #date {
   font-size: 1.2em;
 }
 
-/* line 136, ../scss/app.scss */
-#precipitation, #humidity, #wind, #maxmin {
-  font-size: 1.3em;
-}
-
-/* line 140, ../scss/app.scss */
-#weatherbg {
-  padding: 15px;
-  border: 3px;
-  border-color: black;
-  border-style: solid;
-  background-color: darkorange;
-}
-
-/* line 148, ../scss/app.scss */
-.weathericon {
-  max-height: 450px;
-  padding: inherit;
-}
-
-/* line 153, ../scss/app.scss */
-.nextdays {
-  padding: 20px;
-}
-
-/* line 157, ../scss/app.scss */
-#nextdaysinfo {
-  padding: 10px;
-  border: 3px;
-  border-color: black;
-  border-style: solid;
-}
-
 /* line 164, ../scss/app.scss */
-.days, .tempmax, .tempmin {
+#location,
+#temperature,
+#date {
+  margin-bottom: 0.2em;
+}
+
+/* line 170, ../scss/app.scss */
+#precipitation {
+  margin-top: 1.6em;
+}
+
+/* line 174, ../scss/app.scss */
+#precipitation,
+#humidity,
+#wind,
+#maxmin {
+  font-size: 1.3em;
+  margin-bottom: 0.2em;
+}
+
+/* line 182, ../scss/app.scss */
+#maxmin {
+  margin-bottom: 0;
+}
+
+/* line 186, ../scss/app.scss */
+#wtinfo {
+  padding: 1.5em;
+}
+
+/* line 190, ../scss/app.scss */
+#weatherbg {
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  border: 3px;
+  border-color: #000;
+  border-style: solid;
+  background-color: #ed8629;
+}
+
+/* line 199, ../scss/app.scss */
+.weathericon {
+  width: 100%;
+}
+
+/* line 203, ../scss/app.scss */
+.width-div {
+  padding: 1.5em;
+}
+
+/* line 207, ../scss/app.scss */
+.nextdays {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+/* line 212, ../scss/app.scss */
+#nextdaysinfo {
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  padding: 0.5em;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+}
+@media only screen and (min-width: 40em) {
+  /* line 212, ../scss/app.scss */
+  #nextdaysinfo {
+    font-size: 2em;
+  }
+}
+
+/* line 224, ../scss/app.scss */
+.days,
+.tempmax,
+.tempmin {
   padding: 0px;
   font-size: 0.5em;
   text-align: center;
 }
 
-/* line 170, ../scss/app.scss */
+/* line 232, ../scss/app.scss */
 .days {
   font-weight: 800;
 }
 
-/* line 174, ../scss/app.scss */
+/* line 236, ../scss/app.scss */
 .tempmax {
-  color: darkorange;
+  color: #ed8629;
 }
 
-/* line 178, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 .tempmin {
-  color: dodgerblue;
+  color: #0000ff;
 }
 
-/* line 182, ../scss/app.scss */
-.social {
-  max-height: 25px;
-}
-
-/* line 186, ../scss/app.scss */
+/* line 244, ../scss/app.scss */
 footer {
   font-size: 0.9em;
   background-color: black;
   text-align: center;
-  padding: 5px;
-  color: white;
-  height: auto;
+  color: #fff;
+  height: 3em;
 }
 
-/* line 195, ../scss/app.scss */
+/* line 252, ../scss/app.scss */
+.copyright {
+  line-height: 3em;
+  float: left;
+  margin-left: 2em;
+}
+
+/* line 258, ../scss/app.scss */
+.social {
+  float: right;
+  align-self: center;
+  height: 2em;
+  margin: 0.5em;
+  margin-right: 2em;
+}
+
+/* line 266, ../scss/app.scss */
 .by {
+  width: 100%;
   text-align: center;
   padding: 3px;
   font-size: 0.6em;

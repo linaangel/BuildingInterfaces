@@ -1,8 +1,9 @@
 @import "settings";
 @import "foundation";
-
-body{
+html,
+body {
     font-family: 'Open Sans', 'Helvetica', sans-serif;
+    width: 100%;
 }
 
 .columns {
@@ -12,24 +13,17 @@ body{
     float: left;
 }
 
-.logo{
-    min-width: 60px;
+.top {
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+
+.logo {
     max-height: 95px;
-    vertical-align: middle;
-    border: 0px;
-    padding: 5px;
+    padding: 0.3em;
 }
 
-.padlogo{
-    padding: 0px;  
-    max-width: 82px;
-}
-
-.busqueda {
-   padding: 20px;
-}
-
-.loc{
+.loc {
     max-width: 200px;
 }
 
@@ -41,43 +35,71 @@ h1 {
     font-size: 2em;
     font-weight: 800;
     text-align: left;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 15px;
-    max-height: 26px;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    //Tablet only
+    @media only screen and (max-width: 50em) {
+        font-size: 1.7em;
+    }
+    //Mobile only
+    @media only screen and (max-width: 40em) {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    @media only screen and (max-width: 25em) {
+        font-size: 1.1em;
+    }
 }
 
 h2 {
+    margin-top: 0em;
+    margin-bottom: 0.2em;
     font-size: 1.8em;
     font-weight: 800;
     text-align: left;
-    margin-bottom: 5px;
-    padding: 15px;
-    max-height: 26px;
+    //Tablet only
+    @media only screen and (max-width: 50em) {
+        font-size: 1.5em;
+    }
+    //Mobile only
+    @media only screen and (max-width: 40em) {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    @media only screen and (max-width: 25em) {
+        font-size: 1em;
+    }
 }
 
-.top {
-    margin: 20px;
+.header-parent {
+    position: relative;
+    height: 100px;
+    //Mobile Only 
+    @media only screen and (max-width: 40em) {
+        height: 70px;
+    }
 }
 
-.search {
-    margin-left: 25px;
-    margin-right: 25px;
+.header-child {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .entry {
-    margin-top: 10px;
-    align-self: flex-end;
-    padding: 0px;
-    width: 230px;
+    position: relative;
+    width: 100%;
 }
 
-button.tiny, .button.tiny {
-  padding: 0.5rem;
-    width: 88px;
+button.tiny,
+.button.tiny {
+    padding: 0.5rem;
+    width: 100%;
 }
 
-button, .button {
+button,
+.button {
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
@@ -89,10 +111,10 @@ button, .button {
     background-color: #008CBA;
     color: #FFFFFF;
     transition: background-color 300ms ease-out;
-    margin-top: 10px;
 }
 
-button.alert, .button.alert {
+button.alert,
+.button.alert {
     background-color: dodgerblue;
     height: 2.3125rem;
     border: 2px;
@@ -100,23 +122,29 @@ button.alert, .button.alert {
     border-style: solid;
     font-size: 14px;
     font-family: 'Open Sans', 'Helvetica', sans-serif;
-    margin-top: 10px;
 }
 
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover,
+button.alert:focus,
+.button.alert:hover,
+.button.alert:focus {
     background-color: yellow;
 }
 
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover,
+button.alert:focus,
+.button.alert:hover,
+.button.alert:focus {
     color: black;
 }
 
-.weather {
-    padding-left: 30px;    
-    padding-right: 30px;    
-}
-
-#location, #temperature, #date, #precipitation, #humidity, #wind, #maxmin {
+#location,
+#temperature,
+#date,
+#precipitation,
+#humidity,
+#wind,
+#maxmin {
     color: white;
     text-align: left;
 }
@@ -133,35 +161,69 @@ button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus
     font-size: 1.2em;
 }
 
-#precipitation, #humidity, #wind, #maxmin {
+#location,
+#temperature,
+#date {
+    margin-bottom: 0.2em;
+}
+
+#precipitation {
+    margin-top: 1.6em;
+}
+
+#precipitation,
+#humidity,
+#wind,
+#maxmin {
     font-size: 1.3em;
+    margin-bottom: 0.2em;
+}
+
+#maxmin {
+    margin-bottom: 0;
+}
+
+#wtinfo {
+    padding: 1.5em;
 }
 
 #weatherbg {
-    padding: 15px;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
     border: 3px;
-    border-color: black;
+    border-color: #000;
     border-style: solid;
-    background-color: darkorange;
+    background-color: #ed8629;
 }
 
 .weathericon {
-    max-height: 450px;
-    padding: inherit;
+    width: 100%;
+}
+
+.width-div {
+    padding: 1.5em;
 }
 
 .nextdays {
-    padding: 20px;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
 }
 
 #nextdaysinfo {
-    padding: 10px;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    padding: 0.5em;
     border: 3px;
     border-color: black;
-    border-style: solid; 
+    border-style: solid;
+    @media only screen and (min-width: 40em) {
+        font-size: 2em;
+    }
 }
 
-.days, .tempmax, .tempmin {
+.days,
+.tempmax,
+.tempmin {
     padding: 0px;
     font-size: 0.5em;
     text-align: center;
@@ -172,27 +234,37 @@ button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus
 }
 
 .tempmax {
-    color: darkorange;    
+    color: #ed8629;
 }
 
 .tempmin {
-    color: dodgerblue;
-}
-
-.social {
-    max-height: 25px;
+    color: #0000ff;
 }
 
 footer {
     font-size: 0.9em;
     background-color: black;
     text-align: center;
-    padding: 5px;
-    color: white;
-    height: auto;
+    color: #fff;
+    height: 3em;
+}
+
+.copyright {
+    line-height: 3em;
+    float: left;
+    margin-left: 2em;
+}
+
+.social {
+    float: right;
+    align-self: center;
+    height: 2em;
+    margin: 0.5em;
+    margin-right: 2em;
 }
 
 .by {
+    width: 100%;
     text-align: center;
     padding: 3px;
     font-size: 0.6em;
